@@ -9,14 +9,15 @@ y = 26%5
 lenguajes = ['PHP', 'Perl', 'Python']
 
 if x < y:
-	lenguajes.push('Lua')
+	lenguajes.append('Lua')
 else:
-	lenguajes.pop(5)
+	lenguajes.pop(2)
+
+lenguajes.append(len(lenguajes))
 
 print(lenguajes)
 
-
 '''
 RPTA:
-['PHP', 'Perl']
+['PHP', 'Perl',2]
 '''
