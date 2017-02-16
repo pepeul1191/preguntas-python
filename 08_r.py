@@ -10,22 +10,22 @@ for linea in f:
 	jugador = {"anio_sub20" : datos[0], "nombre" : datos[1] + " " + datos[2], "club" : datos[3]}
 	seleccion.append(jugador)
 
-clubes = []
+jugadores = []
 
 for jugador in seleccion:
-	clubes.append(jugador["club"])
+	jugadores.append(jugador["nombre"])
 
 mayor_caracteres = 0
-mayor_club = ""
+mayor_jugador = ""
 
-for club in clubes:
-	if len(club) > mayor_caracteres:
-		mayor_caracteres = len(club)
-		mayor_club = club
+for jugador in jugadores:
+	if len(jugador) > mayor_caracteres:
+		mayor_caracteres = len(jugador)
+		mayor_jugador = jugador
 
-print(mayor_club)
+print(mayor_jugador)
 
 '''
 RPTA:
-Independiente
+Javier Saviola
 '''
