@@ -9,7 +9,6 @@ if valor in lista:
 else:
 	print(lista[-4:-3])
 
-
 '''
 RPTA:
 ['C']

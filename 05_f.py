@@ -1,4 +1,4 @@
-#Cómo se visualizaría en consola la impresión de las siguientes variables
+#Cómo se visualizaría en consola la respuesta
 
 x = tuple("hola") + tuple(" mundo")
 print(x[3])
