@@ -1,31 +1,19 @@
 #Cómo se visualizaría en consola la respuesta
 
+cadena = 'Un gran poder conlleva una gran responsabilidad'
+diccionario = {'Ben Parker': 12}
 
-f = open("data.txt" , "r")
+b = cadena.split('po')
 
-seleccion = []
+for i in b:
+	if i in diccionario:
+		diccinoario[i] *= 37
+	else:
+		diccionario[i] = 13
 
-for linea in f:
-	datos = linea.split("::")
-	jugador = {"anio_sub20" : datos[0], "nombre" : datos[1] + " " + datos[2], "club" : datos[3]}
-	seleccion.append(jugador)
-
-clubes = []
-
-for jugador in seleccion:
-	clubes.append(jugador["club"])
-
-mayor_caracteres = 0
-mayor_club = ""
-
-for club in clubes:
-	if len(club) > mayor_caracteres:
-		mayor_caracteres = len(club)
-		mayor_club = club
-
-print(mayor_club)
+print(diccionario)
 
 '''
 RPTA:
-Independiente
+{'der conlleva una gran res': 13, 'nsabilidad': 13, 'Un gran ': 13, 'Ben Parker': 12}
 '''
