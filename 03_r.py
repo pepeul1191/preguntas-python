@@ -1,23 +1,16 @@
 #Determinar que valor se imprimiría en la consola
 
-numerador = 131.34
-denominador = 5
+a = "No a la trica"
+b = "Club Atletico Boca Juniors de Huarochori"
+c = "King Kong del norte"
 
-x = numerador//denominador
-y = numerador%denominador
+s1 = a[:3] + b[0]
+s2 = b[4:] + c[-12:-6]
+s3 = c[-9:-2]
 
-lenguajes = ['PHP', 'Python', 'Perl']
-
-if x < y:
-	lenguajes.append('Lua')
-else:
-	lenguajes.pop(2)
-
-lenguajes.append(len(lenguajes)**4)
-
-print(lenguajes)
+print(s1 + s2 +s3)
 
 '''
 RPTA:
-['PHP', 'Python', 16]
+No C Atletico Boca Juniors de Huarochoring deldel nor
 '''
