@@ -1,17 +1,16 @@
 #Determinar que valor se imprimiría en la consola
 
-lista = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F']
+cadena = "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis"
 
-x = 33
-y = 3
-valor = x % y
+sw = 180//13
+cad = cadena.split(' ')
 
-if valor in lista:
-	print(lista[-5:-2])
-else:
-	print(lista[1:3])
+if cad[4][3] == cad [1][1] or sw%10 == 13:
+	sw += 1
+
+print(sw)
 
 '''
 RPTA:
-['B', 'C', 'D']
+13
 '''
