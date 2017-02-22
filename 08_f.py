@@ -7,7 +7,7 @@ b = cadena.split('po')
 
 for i in b:
 	if i in diccionario:
-		diccinoario[i] *= 37
+		diccionario[i] *= 37
 	else:
 		diccionario[i] = 13
 
